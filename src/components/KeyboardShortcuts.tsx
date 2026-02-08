@@ -31,8 +31,8 @@ export function KeyboardShortcuts() {
 
   useHotkeys('g+b', () => (window.location.href = '/blog'))
 
-  // Help modal
-  useHotkeys('shift+/', () => setShowHelp(true), { preventDefault: true })
+  // Help modal (? key) - toggle
+  useHotkeys('shift+slash', () => setShowHelp(prev => !prev), { preventDefault: true })
 
   return <KeyboardShortcutsHelp isOpen={showHelp} onClose={() => setShowHelp(false)} />
 }
