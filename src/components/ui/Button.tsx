@@ -5,7 +5,8 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 function Button({ variant = 'primary', className = '', children, ...props }: ButtonProps) {
-  const baseStyles = 'px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2'
+  const baseStyles =
+    'px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2'
 
   const variantStyles = {
     primary: 'bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500',
@@ -13,10 +14,7 @@ function Button({ variant = 'primary', className = '', children, ...props }: But
   }
 
   return (
-    <button
-      className={`${baseStyles} ${variantStyles[variant]} ${className}`}
-      {...props}
-    >
+    <button className={`${baseStyles} ${variantStyles[variant]} ${className}`} {...props}>
       {children}
     </button>
   )

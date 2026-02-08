@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+dist-ssr
+*.local
+
+# Coverage
+coverage
+
+# Test results
+test-results
+playwright-report
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build artifacts
+*.tsbuildinfo

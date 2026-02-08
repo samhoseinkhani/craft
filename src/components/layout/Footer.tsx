@@ -6,15 +6,15 @@ function Footer() {
   return (
     <footer className="border-t border-neutral-200 py-12">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-neutral-600 text-sm">
+        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+          <div className="text-sm text-neutral-600">
             © {currentYear} Sam Hoseinkhani. All rights reserved.
           </div>
 
           <div className="flex items-center gap-6">
             <a
               href="mailto:hsamhoseinkhani@gmail.com"
-              className="text-neutral-600 hover:text-neutral-900 transition-colors text-sm font-medium"
+              className="text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
             >
               Email
             </a>
@@ -22,7 +22,7 @@ function Footer() {
               href="https://github.com/samhoseinkhani"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-900 transition-colors text-sm font-medium"
+              className="text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
             >
               GitHub
             </a>
@@ -30,7 +30,7 @@ function Footer() {
               href="https://linkedin.com/in/samhoseinkhani"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-600 hover:text-neutral-900 transition-colors text-sm font-medium"
+              className="text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
             >
               LinkedIn
             </a>
