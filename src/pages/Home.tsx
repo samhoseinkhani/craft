@@ -1,3 +1,4 @@
+import avatar from '@/assets/avatar.png'
 import Container from '@/components/layout/Container'
 import Footer from '@/components/layout/Footer'
 import Header from '@/components/layout/Header'
@@ -11,6 +12,15 @@ function Home() {
         <Section spacing="large">
           <Container size="narrow">
             <div className="flex min-h-[70vh] flex-col justify-center">
+              {/* Avatar */}
+              <div className="mb-8">
+                <img
+                  src={avatar}
+                  alt="Sam Hoseinkhani"
+                  className="border-primary-100 h-32 w-32 rounded-full border-4 object-cover shadow-lg"
+                />
+              </div>
+
               <h1 className="mb-8 text-5xl font-bold md:text-6xl">Hello World 👋</h1>
 
               <div className="prose prose-lg max-w-none space-y-6 leading-relaxed text-neutral-700">
