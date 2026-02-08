@@ -20,7 +20,7 @@ function Footer() {
               className="group font-mono text-sm font-bold uppercase"
               asChild
             >
-              <a href="mailto:hsamhoseinkhani@gmail.com">
+              <a href="mailto:hsamhoseinkhani@gmail.com" className="flex items-center">
                 <Icon
                   icon={MailIcon}
                   size={16}
@@ -35,7 +35,12 @@ function Footer() {
               className="group font-mono text-sm font-bold uppercase"
               asChild
             >
-              <a href="https://github.com/samhoseinkhani" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/samhoseinkhani"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
                 <Icon
                   icon={GithubIcon}
                   size={16}
@@ -54,6 +59,7 @@ function Footer() {
                 href="https://linkedin.com/in/samhoseinkhani"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="flex items-center"
               >
                 <Icon
                   icon={LinkedinIcon}

@@ -1,8 +1,5 @@
-import type { ComponentProps, ComponentType, SVGProps } from 'react'
-import type { Icon as LucideIconType } from '@/icons'
-
-// Support both Lucide icons and custom SVG icons
-type IconType = LucideIconType | ComponentType<SVGProps<SVGSVGElement>>
+import type { ComponentProps } from 'react'
+import type { Icon as IconType } from '@/icons'
 
 interface IconProps extends Omit<ComponentProps<'svg'>, 'ref'> {
   icon: IconType

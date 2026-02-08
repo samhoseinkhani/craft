@@ -2,8 +2,8 @@
  * Animation configurations using Motion One
  * Reusable animation presets following best practices
  */
-import type {DOMKeyframesDefinition} from 'motion'
-import {animate as motionAnimate} from 'motion'
+import type { DOMKeyframesDefinition } from 'motion'
+import { animate as motionAnimate } from 'motion'
 
 // Easing functions for smooth, professional animations
 export const easings = {
