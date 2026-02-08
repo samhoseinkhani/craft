@@ -10,6 +10,7 @@ function ThemeToggle() {
   // Initialize theme on mount
   useEffect(() => {
     setTheme(theme)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

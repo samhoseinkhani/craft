@@ -17,29 +17,37 @@ function Footer() {
             <Button
               variant="ghost"
               size="sm"
-              className="font-mono text-sm font-bold uppercase"
+              className="group font-mono text-sm font-bold uppercase"
               asChild
             >
               <a href="mailto:hsamhoseinkhani@gmail.com">
-                <Icon icon={MailIcon} size={16} />
+                <Icon
+                  icon={MailIcon}
+                  size={16}
+                  className="transition-transform duration-200 group-hover:-translate-y-0.5"
+                />
                 <span className="hidden md:inline">Email</span>
               </a>
             </Button>
             <Button
               variant="ghost"
               size="sm"
-              className="font-mono text-sm font-bold uppercase"
+              className="group font-mono text-sm font-bold uppercase"
               asChild
             >
               <a href="https://github.com/samhoseinkhani" target="_blank" rel="noopener noreferrer">
-                <Icon icon={GithubIcon} size={16} />
+                <Icon
+                  icon={GithubIcon}
+                  size={16}
+                  className="transition-transform duration-200 group-hover:-translate-y-0.5"
+                />
                 <span className="hidden md:inline">GitHub</span>
               </a>
             </Button>
             <Button
               variant="ghost"
               size="sm"
-              className="font-mono text-sm font-bold uppercase"
+              className="group font-mono text-sm font-bold uppercase"
               asChild
             >
               <a
@@ -47,7 +55,11 @@ function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icon icon={LinkedinIcon} size={16} />
+                <Icon
+                  icon={LinkedinIcon}
+                  size={16}
+                  className="transition-transform duration-200 group-hover:-translate-y-0.5"
+                />
                 <span className="hidden md:inline">LinkedIn</span>
               </a>
             </Button>
