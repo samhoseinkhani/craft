@@ -1,42 +1,37 @@
-import Container from './Container'
+import { Button } from '@/components/ui/button'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-neutral-200 py-12">
-      <Container>
+    <footer className="bg-muted/30 border-t">
+      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="text-sm text-neutral-600">
-            © {currentYear} Sam Hoseinkhani. All rights reserved.
+          <div className="text-muted-foreground text-sm">
+            <span className="text-primary font-mono">{`{}`}</span> © {currentYear} Sam Hoseinkhani
           </div>
 
-          <div className="flex items-center gap-6">
-            <a
-              href="mailto:hsamhoseinkhani@gmail.com"
-              className="text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
-            >
-              Email
-            </a>
-            <a
-              href="https://github.com/samhoseinkhani"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/samhoseinkhani"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm font-medium text-neutral-600 transition-colors hover:text-neutral-900"
-            >
-              LinkedIn
-            </a>
+          <div className="flex items-center gap-2">
+            <Button variant="ghost" size="sm" asChild>
+              <a href="mailto:hsamhoseinkhani@gmail.com">Email</a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a href="https://github.com/samhoseinkhani" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </Button>
+            <Button variant="ghost" size="sm" asChild>
+              <a
+                href="https://linkedin.com/in/samhoseinkhani"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </Button>
           </div>
         </div>
-      </Container>
+      </div>
     </footer>
   )
 }
