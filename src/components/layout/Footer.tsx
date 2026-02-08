@@ -4,23 +4,23 @@ function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-muted/30 border-t">
-      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-          <div className="text-muted-foreground text-sm">
-            <span className="text-primary font-mono">{`{}`}</span> © {currentYear} Sam Hoseinkhani
+    <footer className="border-t border-gray-200 bg-gray-50">
+      <div className="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <div className="font-mono text-xs tracking-wide text-gray-600">
+            <span className="text-accent-500">{`{}`}</span> © {currentYear} Sam Hoseinkhani
           </div>
 
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="sm" asChild>
+          <div className="flex items-center gap-1">
+            <Button variant="ghost" size="sm" className="font-mono text-xs uppercase" asChild>
               <a href="mailto:hsamhoseinkhani@gmail.com">Email</a>
             </Button>
-            <Button variant="ghost" size="sm" asChild>
+            <Button variant="ghost" size="sm" className="font-mono text-xs uppercase" asChild>
               <a href="https://github.com/samhoseinkhani" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </Button>
-            <Button variant="ghost" size="sm" asChild>
+            <Button variant="ghost" size="sm" className="font-mono text-xs uppercase" asChild>
               <a
                 href="https://linkedin.com/in/samhoseinkhani"
                 target="_blank"
