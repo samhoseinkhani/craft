@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
+import ThemeToggle from '@/components/ThemeToggle'
 import Icon from '@/components/ui/Icon'
 import { Button } from '@/components/ui/button'
 import { CloseIcon, MenuIcon } from '@/icons'
@@ -47,10 +48,13 @@ function Header() {
             <Button variant="ghost" size="sm" className="font-mono text-xs uppercase" asChild>
               <Link to="/blog">Blog</Link>
             </Button>
+            <ThemeToggle />
           </div>
 
-          {/* Spacer for Mobile (keeps name centered) */}
-          <div className="w-10 md:hidden" />
+          {/* Theme Toggle for Mobile */}
+          <div className="md:hidden">
+            <ThemeToggle />
+          </div>
         </nav>
       </div>
 
