@@ -21,14 +21,16 @@
     "check": "pnpm type-check && pnpm lint && pnpm format && pnpm test run && pnpm build"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.158.4",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@playwright/test": "^1.58.2",
     "@tailwindcss/postcss": "^4.1.18",
+    "@tanstack/react-router-devtools": "^1.158.4",
+    "@tanstack/router-plugin": "^1.158.4",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@trivago/prettier-plugin-sort-imports": "^6.0.2",

@@ -22,6 +22,9 @@ playwright/.cache/
 # Build artifacts
 *.tsbuildinfo
 
+# TanStack Router generated files
+routeTree.gen.ts
+
 # Environment variables
 .env
 .env.local

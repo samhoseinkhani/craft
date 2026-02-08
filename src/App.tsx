@@ -1,18 +1,18 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
-import Blog from '@/pages/Blog'
-import Home from '@/pages/Home'
-import Resume from '@/pages/Resume'
+import { RouterProvider, createRouter } from '@tanstack/react-router'
+import { routeTree } from './routeTree.gen'
+
+// Create a new router instance
+const router = createRouter({ routeTree })
+
+// Register the router instance for type safety
+declare module '@tanstack/react-router' {
+  interface Register {
+    router: typeof router
+  }
+}
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/blog" element={<Blog />} />
-      </Routes>
-    </Router>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
