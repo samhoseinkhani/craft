@@ -11,7 +11,9 @@ function HomePage() {
       {/* Hero Section - Ultra Minimal */}
       <section className="relative">
         {/* Subtle Grid Pattern Background */}
-        <div className="absolute inset-0 overflow-hidden bg-[linear-gradient(to_right,#8882_1px,transparent_1px),linear-gradient(to_bottom,#8882_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:4rem_4rem]" />
+        <div
+          className="absolute inset-0 overflow-hidden bg-[size:4rem_4rem] [background-image:linear-gradient(to_right,hsl(var(--hue)_var(--saturation-low)_88%/0.15)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--hue)_var(--saturation-low)_88%/0.15)_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_70%,transparent_100%)] dark:[background-image:linear-gradient(to_right,hsl(var(--hue)_var(--saturation-low)_100%/0.05)_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--hue)_var(--saturation-low)_100%/0.05)_1px,transparent_1px)]"
+        />
 
         <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
